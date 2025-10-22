@@ -65,13 +65,13 @@
 
   <section id="contact" class="contact">
     <h2>Book Us for Your Event</h2>
-    <form onsubmit="return sendEmail(event)">
-      <input type="text" id="name" placeholder="Your Name" required>
-      <input type="tel" id="phone" placeholder="Phone Number" required>
-      <input type="text" id="event" placeholder="Event Name" required>
-      <textarea id="message" placeholder="Tell us about your event (date, location, guests)"></textarea>
-      <button type="submit">Send Booking Request</button>
-    </form>
+    <form action="https://formspree.io/f/mjkaqwno" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="tel" name="phone" placeholder="Phone Number" required>
+  <input type="text" name="event" placeholder="Event Name" required>
+  <textarea name="message" placeholder="Tell us about your event" required></textarea>
+  <button type="submit">Send Booking Request</button>
+</form>
 
     <div class="socials">
       <h3>Follow Us</h3>
@@ -104,4 +104,3 @@
   </script>
 </body>
 </html>
-
